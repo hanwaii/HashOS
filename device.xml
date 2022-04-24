@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <default revision="master"
            remote="aosp"
@@ -13,7 +13,7 @@
   <superproject name="platform/superproject" remote="aosp"/>
   <contactinfo bugurl="go/repo-bug" />
 
-  <project path="device/google/sunfish" name="device/google/sunfish" groups="device,sunfish" />
+  <project path="device/google/sunfish" name="device/google/sunfish" groups="device,sunfish" clone-depth="1" />
   <project path="device/google/sunfish-kernel" name="device/google/sunfish-kernel" groups="device,sunfish" clone-depth="1" />
   <project path="device/google/sunfish-sepolicy" name="device/google/sunfish-sepolicy" groups="device,sunfish" />
 
