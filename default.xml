@@ -1171,7 +1171,12 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
-
+  
+  <!-- Remove unused AOSP device repos -->
+  <include name="remove.xml" />
+  
+  <!-- Include used AOSP device repos -->
+  <include name="device.xml" />
 
   <!--
     Merge marker to make it easier for git to merge AOSP-only manifest
